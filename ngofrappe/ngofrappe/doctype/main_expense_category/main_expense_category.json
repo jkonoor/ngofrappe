@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "autoname": "ExpenseCateg.###",
+ "color": "Purple",
+ "creation": "2024-02-24 17:30:36.619616",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "deactive",
+  "section_break_spxu",
+  "center",
+  "center_name",
+  "column_break_xzli",
+  "category_name",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "deactive",
+   "fieldtype": "Check",
+   "label": "deactive"
+  },
+  {
+   "fieldname": "section_break_spxu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "center",
+   "fieldtype": "Link",
+   "label": "Center",
+   "options": "Centre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Category Name",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Created On"
+  },
+  {
+   "fetch_from": "center.center_name",
+   "fieldname": "center_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Center Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xzli",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-24 18:48:48.976711",
+ "modified_by": "Administrator",
+ "module": "Ngofrappe",
+ "name": "Main Expense Category",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

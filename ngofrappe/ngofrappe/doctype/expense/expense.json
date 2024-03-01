@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-28 12:05:35.233779",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "expense_type",
+  "expense_details_section",
+  "centre",
+  "main_expense_category",
+  "expense_sub_category",
+  "date",
+  "price",
+  "column_break_qagk",
+  "user_list",
+  "group_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Expense Type",
+   "options": "\nFixed\nVariable\nProvisioning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_details_section",
+   "fieldtype": "Section Break",
+   "label": "Expense Details"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Link",
+   "label": "Centre",
+   "options": "Centre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "main_expense_category",
+   "fieldtype": "Link",
+   "label": "Main Expense category",
+   "options": "Main Expense Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_sub_category",
+   "fieldtype": "Link",
+   "label": "Expense Sub Category",
+   "options": "Expense Sub Categories Variable"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Int",
+   "label": "Price",
+   "non_negative": 1,
+   "precision": "1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_list",
+   "fieldtype": "Table MultiSelect",
+   "label": "User List",
+   "options": "NGO Centre User Selection"
+  },
+  {
+   "fieldname": "group_list",
+   "fieldtype": "Table MultiSelect",
+   "label": "Group List",
+   "options": "NGO Centre User Group Selection"
+  },
+  {
+   "fieldname": "column_break_qagk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 18:13:20.551731",
+ "modified_by": "Administrator",
+ "module": "Ngofrappe",
+ "name": "Expense",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

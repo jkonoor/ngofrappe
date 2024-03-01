@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-26 07:41:40.895364",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "deactivate",
+  "section_break_sehb",
+  "center",
+  "user_type",
+  "main_expense_category",
+  "column_break_mwnr",
+  "sub_category",
+  "price"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "deactivate",
+   "fieldtype": "Check",
+   "label": "Deactivate"
+  },
+  {
+   "fieldname": "section_break_sehb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "center",
+   "fieldtype": "Link",
+   "label": "Center",
+   "options": "Centre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_type",
+   "fieldtype": "Link",
+   "label": "User Type",
+   "options": "NGO User Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "main_expense_category",
+   "fieldtype": "Link",
+   "label": "Main Expense Category",
+   "options": "Main Expense Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mwnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sub Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-26 11:11:04.510969",
+ "modified_by": "Administrator",
+ "module": "Ngofrappe",
+ "name": "Expense Sub Categories Recurring",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

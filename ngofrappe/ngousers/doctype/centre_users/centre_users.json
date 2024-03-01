@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-27 18:03:35.768523",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "centre_user_section",
+  "enable",
+  "user_details_section",
+  "first_name",
+  "last_name",
+  "address",
+  "email",
+  "dni",
+  "password",
+  "column_break_rdgr",
+  "centre",
+  "centre_name",
+  "centre_address",
+  "aduedo_reference",
+  "mandato_reference",
+  "account_number",
+  "mandato_fecha",
+  "column_break_ifqf",
+  "dependencia",
+  "tutelado",
+  "role",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "centre_user_section",
+   "fieldtype": "Section Break",
+   "label": "Centre User"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dni",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DNI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rdgr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Link",
+   "label": "Centre",
+   "options": "Centre",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "centre.address",
+   "fieldname": "centre_address",
+   "fieldtype": "Data",
+   "label": "Centre Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "aduedo_reference",
+   "fieldtype": "Data",
+   "label": "Aduedo Reference",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mandato_reference",
+   "fieldtype": "Data",
+   "label": "Mandato Reference",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Int",
+   "label": "Account Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mandato_fecha",
+   "fieldtype": "Date",
+   "label": "Mandato Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dependencia",
+   "fieldtype": "Link",
+   "label": "Dependencia",
+   "options": "NGO User Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "tutelado",
+   "fieldtype": "Check",
+   "label": "Tutelado"
+  },
+  {
+   "default": "Centre User",
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "column_break_ifqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On",
+   "options": "Today",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "centre.center_name",
+   "fieldname": "centre_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Centre Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 11:49:42.602497",
+ "modified_by": "Administrator",
+ "module": "ngousers",
+ "name": "Centre Users",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}

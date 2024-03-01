@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TL.###",
+ "creation": "2024-02-26 14:40:18.439922",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "new_accompanying_price_section",
+  "deactivate",
+  "section_break_lzvx",
+  "center",
+  "type",
+  "price__hour",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "new_accompanying_price_section",
+   "fieldtype": "Section Break",
+   "label": "New Accompanying Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "deactivate",
+   "fieldtype": "Check",
+   "label": "Deactivate"
+  },
+  {
+   "fieldname": "section_break_lzvx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "center",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Center",
+   "options": "Centre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price__hour",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Price / Hour",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Created On"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-26 14:51:31.674606",
+ "modified_by": "Administrator",
+ "module": "Ngofrappe",
+ "name": "Tutalado Price",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

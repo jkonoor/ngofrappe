@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "autoname": "Center.###",
+ "creation": "2024-02-24 06:51:59.203448",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "new_center_section",
+  "center_name",
+  "subject_to_tax",
+  "column_break_stbn",
+  "address",
+  "section_break_gfnu",
+  "cif",
+  "column_break_vozq",
+  "taxes_",
+  "section_break_qcrd",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "new_center_section",
+   "fieldtype": "Section Break",
+   "label": "Center Details"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Autocomplete",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_stbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "subject_to_tax",
+   "fieldtype": "Check",
+   "label": "It is subject to Tax"
+  },
+  {
+   "depends_on": "eval:doc.subject_to_tax == true",
+   "fieldname": "cif",
+   "fieldtype": "Data",
+   "label": "CIF"
+  },
+  {
+   "depends_on": "eval:doc.subject_to_tax == true",
+   "fieldname": "taxes_",
+   "fieldtype": "Data",
+   "label": "Taxes (%)"
+  },
+  {
+   "fieldname": "section_break_gfnu",
+   "fieldtype": "Section Break",
+   "label": "Tax Details"
+  },
+  {
+   "fieldname": "column_break_vozq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qcrd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created on",
+   "read_only": 1
+  },
+  {
+   "fieldname": "center_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-24 18:45:12.842681",
+ "modified_by": "Administrator",
+ "module": "Ngofrappe",
+ "name": "Centre",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "center_name"
+}

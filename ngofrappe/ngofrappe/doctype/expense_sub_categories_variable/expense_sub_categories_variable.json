@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-28 12:20:29.109413",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "new_price_section",
+  "centre",
+  "main_expense_category",
+  "expense_type",
+  "column_break_jqfy",
+  "sub_category_name",
+  "price",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "new_price_section",
+   "fieldtype": "Section Break",
+   "label": "New Price"
+  },
+  {
+   "fieldname": "centre",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Centre",
+   "options": "Centre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "main_expense_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Main Expense category",
+   "options": "Main Expense Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_category_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub category Name",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Int",
+   "label": "Price",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_type",
+   "fieldtype": "Select",
+   "label": "Expense Type",
+   "options": "Variable\nFixed\nProvisioning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On",
+   "options": "Today",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jqfy",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 12:54:25.960749",
+ "modified_by": "Administrator",
+ "module": "Ngofrappe",
+ "name": "Expense Sub Categories Variable",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
