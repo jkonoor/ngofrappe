@@ -70,7 +70,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 20:24:10.531450",
+ "modified": "2024-03-01 12:42:33.874641",
  "modified_by": "Administrator",
  "module": "Ngofrappe",
  "name": "Program Users",
@@ -89,6 +89,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
  "sort_field": "modified",

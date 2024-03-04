@@ -229,3 +229,23 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Workspace", "filters": [
+        ["name", "in", [
+            "NGO Super Admin",
+            "NGO Admin",
+            "NGO Coordinator",
+            "NGO Helper"
+        ]]
+    ]},
+    {"dt": "Role", "filters": [
+        ["name", "in", [
+            "Super Admin",
+            "Admin",
+            "Coordinator",
+            "Helper",
+            "Centre User"
+        ]]
+    ]}
+]
+

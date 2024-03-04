@@ -79,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 12:54:25.960749",
+ "modified": "2024-03-01 12:42:53.067373",
  "modified_by": "Administrator",
  "module": "Ngofrappe",
  "name": "Expense Sub Categories Variable",
@@ -98,6 +98,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

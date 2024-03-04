@@ -78,7 +78,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-24 18:45:12.842681",
+ "modified": "2024-03-01 12:42:00.650603",
  "modified_by": "Administrator",
  "module": "Ngofrappe",
  "name": "Centre",
@@ -98,6 +98,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
  "sort_field": "modified",

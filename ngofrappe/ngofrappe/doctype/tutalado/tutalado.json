@@ -63,10 +63,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-26 14:51:31.674606",
+ "modified": "2024-03-01 12:38:50.272486",
  "modified_by": "Administrator",
  "module": "Ngofrappe",
- "name": "Tutalado Price",
+ "name": "Tutalado",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
@@ -83,6 +83,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

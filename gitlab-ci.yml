@@ -1,0 +1,16 @@
+stages:
+  - deploy_erp
+
+ssh_into_ec2:
+  stage: deploy_erp
+  image: docker:20.10.16
+  before_script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 777 ~/.ssh
+  script:
+    - echo $SSH_PRIVATE_KEY > key.pem
+    - chmod +x entrypoint.sh
+    - ssh -o StrictHostKeyChecking=no fadmin@${Public_IP} 'bash -s' < entrypoint.sh
+  when: manual

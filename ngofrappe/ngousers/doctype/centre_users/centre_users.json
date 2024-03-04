@@ -168,7 +168,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 11:49:42.602497",
+ "modified": "2024-03-01 12:45:31.756283",
  "modified_by": "Administrator",
  "module": "ngousers",
  "name": "Centre Users",
@@ -187,6 +187,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

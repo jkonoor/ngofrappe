@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class TutaladoPrice(Document):
+class Tutalado(Document):
 	pass

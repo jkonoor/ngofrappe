@@ -61,7 +61,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 17:50:35.374680",
+ "modified": "2024-03-01 12:45:38.893246",
  "modified_by": "Administrator",
  "module": "ngousers",
  "name": "NGO User Group",
@@ -80,6 +80,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
